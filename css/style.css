@@ -268,6 +268,7 @@ ol {
   Header
 -----------------------*/
 .header {
+  height: 75px;
   position: fixed;
   left: 0;
   top: 0;
@@ -280,7 +281,7 @@ ol {
 }
 
 .header__logo {
-  padding: 20px 0;
+  padding: 12px 0;
 }
 .header__logo a {
   display: inline-block;
@@ -288,7 +289,7 @@ ol {
 
 .header__nav__option {
   text-align: right;
-  padding: 28px 0px;
+  padding: 22px 0px;
 }
 
 .header__nav__menu {
