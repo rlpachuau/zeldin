@@ -1,343 +1,147 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="zeldinstudios">
-    <meta name="keywords" content="CGI, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zeldin Studio</title>
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Zeldin Studio | Cinematic VFX for Film & Games</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="https://rlpachuau.github.io/zeldin/"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                            
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#project">Projects</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <button id="backToTop" onclick="window.scrollTo(0,0)"><i class="fas fa-chevron-up"></i></button>
+
+    <header>
+        <div class="logo"><img src="img/data/logo.png" alt="Zeldin Studio" onclick="window.scrollTo(0,0)"></div>
+        <div class="nav-container">
+            <nav id="navBar">
+                <ul>
+                    <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+                    <li><a href="#pipeline" onclick="toggleMenu()">Pipeline</a></li>
+                    <li><a href="#capabilities" onclick="toggleMenu()">Capabilities</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-socials">
+                <a href="https://www.instagram.com/zeldin_studio/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@zeldinstudio" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div id="mobile-menu-wrap"></div>
+            <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
         </div>
     </header>
-    <!-- Header End -->
 
-    <!-- Hero Section Begin -->
-    <section id="home" class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/slide/slide_1.jpg">
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/slide/slide_2.jpg">
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/slide/slide_4.jpg">
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/slide/slide_5.jpg">
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/slide/slide_3.jpg">
-                
-                <!--    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="hero__text">
-                                    <span>Text</span>
-                                    <h2>Text</h2>
-                                    <a href="#" class="primary-btn">See more about us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+    <section class="hero slant-down-right" id="hero">
+        <video autoplay muted loop playsinline><source src="img/data/bg.mp4" type="video/mp4"></video>
+        <div class="hero-content">
+            <h1>ZELDIN STUDIO</h1>
+            <p>"IMAGINATION, BEYOND REALITY."</p>
+            <a href="#work" class="btn">View Our Work</a>
+        </div>
+    </section>
 
+    <section id="about" class="slant-up-right">
+        <div class="about-content">
+            <h2>BOUTIQUE VFX STUDIO</h2>
+            <p>Zeldin Studio is a cinematic CGI and animation studio focused on game cinematics, character modeling, and animation. We create trailers, cutscenes, and in-game visuals, while also supporting films and commercials with selective, high-end CGI and VFX work.</p>
+        </div>
+    </section>
+
+    <section id="work" class="slant-down-left work-bg">
+        <h2>SELECTED WORK</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-video-id="1055938592" onclick="openVideo(this)">
+                <img src="img/work/portfolio_1.jpg" alt="Work">
+                <div class="item-overlay"><i class="fas fa-play"></i><span>PLAY VIDEO</span></div>
+            </div>
+            <div class="portfolio-item" data-image-src="img/work/portfolio_4.jpg" onclick="openImage(this)">
+                <img src="img/work/portfolio_4.jpg" alt="Asset">
+                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+            </div>
+            <div class="portfolio-item" data-image-src="img/work/portfolio_5.jpg" onclick="openImage(this)">
+                <img src="img/work/portfolio_5.jpg" alt="Asset">
+                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+            </div>
+            <div class="portfolio-item" data-image-src="img/work/portfolio_6.jpg" onclick="openImage(this)">
+                <img src="img/work/portfolio_6.jpg" alt="Asset">
+                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+            </div>
+            <div class="portfolio-item" data-image-src="img/work/portfolio_7.jpg" onclick="openImage(this)">
+                <img src="img/work/portfolio_7.jpg" alt="Asset">
+                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
             </div>
         </div>
     </section>
-    <!-- Hero Section End -->
 
-    <!-- Services Section Begin -->
-    <section id="services" class="services spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="services__title">
-                        <div class="section-title">
-                            <h2>Services</h2>
-                        </div>
-                            <p>We create cinematic CGI and animation with a primary focus on games, delivering high-end cinematics, character work, and visual storytelling.
-                                 Our services are designed to support both creative vision and production ready pipelines, with selective work for film and commercial projects.</p>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="">
-                                </div>
-                                <h4>Game Cinematics & Storytelling</h4>
-                                <p>High-end cinematic trailers, in-engine cutscenes, and narrative-driven visuals crafted to elevate games beyond gameplay and into cinematic experiences.</p>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-2.png" alt="">
-                                </div>
-                                <h4>Character Creation & Performance Animation</h4>
-                             <p>Character and creature modeling, rigging, and animation focused on believable performance and cinematic built for both in-game use and cinematic delivery.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-3.png" alt="">
-                                </div>
-                                <h4>Cinematic CGI, FX & World Building</h4>
-                               <p>CGI environments, simulations, and visual effects designed to create scale, atmosphere, and impact for game cinematics and story-driven content.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-4.png" alt="">
-                                </div>
-                                <h4>Commercial, Film & VFX</h4>
-                                <p>Live-action VFX and commercial work, delivering cinematic imagery with the same creative discipline and production standards as our game projects.</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="pipeline" class="slant-up-right">
+        <h2>TECHNICAL PIPELINE</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>01. PROCEDURAL</h3><p>Houdini-driven workflows for scalable environments, simulations, and non-destructive iteration.</p></div>
+            <div class="service-card"><h3>02. MODELING & ANIM</h3><p>Character, asset, and animation production in Autodesk Maya, built for cinematic quality and real-time integration.</p></div>
+            <div class="service-card"><h3>03. REAL-TIME</h3><p>Unreal Engine and Unity pipelines for cinematic trailers, cutscenes, and engine-ready assets.</p></div>
         </div>
     </section>
-    <!-- Services Section End -->
 
-    <!-- Work Section Begin WIDE ITEM HMAN TUR-->
-    <section id="project" class="work">
-        <div class="work__gallery">
-            <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-2.jpg">
-                <a href="https://vimeo.com/600436289" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-3.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-4.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-5.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-6.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-<!-- test work-->
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-8.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>    
-                
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-9.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-<!-- close test work-->
-
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
-                <a href="https://vimeo.com/1055938592" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>Lai Idol 2023</h4>
-                </div>
-            </div>
+    <section id="capabilities" class="slant-down-left">
+        <h2>CAPABILITIES</h2>
+        <div class="cap-grid">
+            <div class="cap-card"><h4>CINEMATIC VISUALS</h4><p>Cinematic shots for game trailers, cutscenes, commercials, and narrative film sequences.</p></div>
+            <div class="cap-card"><h4>ENGINE-READY ASSETS</h4><p>Characters, environments, and props optimized for Unreal Engine with cinematic detail.</p></div>
+            <div class="cap-card"><h4>TECHNICAL FX</h4><p>Procedural simulations including destruction, fluids, smoke, and fire for film and game pipelines.</p></div>
+            <div class="cap-card"><h4>COMPOSITING & FINISH</h4><p>Shot-based compositing, cleanup, and final delivery for film and game cinematics.</p></div>
         </div>
     </section>
-    <!-- Work Section End -->
 
-    <!-- Client Logo Begin -->
-   <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Clients</h2>
-                        <br>
-                        <div class="logo__carousel owl-carousel">
-                            <a href="#" class="logo__item"><img src="img/logo/logo-1.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-2.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-3.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-4.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-5.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-6.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-7.png" alt=""></a>
-                            <a href="#" class="logo__item"><img src="img/logo/logo-8.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+    <section id="clients">
+        <h2 class="client-title">CLIENTS</h2>
+        <div class="client-track">
+            <img src="img/client/logo-1.png" alt="Client Logo">
+            <img src="img/client/logo-2.png" alt="Client Logo">
+            <img src="img/client/logo-3.png" alt="Client Logo">
+            <img src="img/client/logo-4.png" alt="Client Logo">
+            <img src="img/client/logo-5.png" alt="Client Logo">
+            <img src="img/client/logo-6.png" alt="Client Logo">
+            <img src="img/client/logo-7.png" alt="Client Logo">
+            <img src="img/client/logo-8.png" alt="Client Logo">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="contact-title">START A PROJECT</h2>
+        <p class="email-text">INFO@ZELDINSTUDIO.COM</p>
+        <button class="btn" onclick="copyEmail()">Copy Email</button>
+        
+        <div class="contact-socials">
+            <a href="https://www.instagram.com/zeldin_studio/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@zeldinstudio" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="contact-details">
+            <p class="office-label">Main Office</p>
+            <p>Chawngbawla Road, Zotlang</p>
+            <p>Aizawl, Mizoram, IN, 796009</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 ZELDIN STUDIO. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </section>
+
+    <div id="videoModal">
+        <div class="modal-content-wrapper">
+            <span class="close-modal" onclick="closeVideo()">&times;</span>
+            <div class="modal-content-container">
+                <div class="vimeo-container"><iframe id="vimeoPlayer" src="" frameborder="0" allow="autoplay; fullscreen"></iframe></div>
             </div>
         </div>
     </div>
-    <!-- Client Logob End -->
 
-    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="callto__text">
-                        <h2>"Imagination, beyond reality."</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Call To Action Section End -->
-
-    <!-- Footer Section Begin -->
-     <section id="contact">
-     <footer class="footer">
-        <div class="container">
-            
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Zeldin Studio is a cinematic CGI and animation studio focused on game cinematics, character modeling, and animation. 
-                                We create trailers, cutscenes, and in-game visuals, while also supporting films and commercials with selective, high-end CGI and VFX work.</p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                        <!----Tah hian duh chuan thil a dah theih-->
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Contact Us</h5>
-                            <ul>
-                                <li><a href="#">Email</a></li>
-                                <li><a href="#">Company</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                   <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>ZELDIN STUDIO</h5>
-                            <p>Chawngbawla Road,
-                            Zotlang, Aizawl
-                            Mizoram, 796009</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Zeldin Studio &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </section>
-    <!-- Footer Section End -->
-
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
