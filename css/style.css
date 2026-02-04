@@ -161,3 +161,48 @@ footer p { font-size:11px; opacity:0.3; }
 
     #capabilities { background-attachment: scroll; }
 }
+/* Filter Button Styling */
+.filter-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 10px 25px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* Logic for Hiding/Showing */
+.portfolio-item {
+    display: block; /* Default state */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.portfolio-item.hide {
+    display: none;
+    opacity: 0;
+}
+
+.portfolio-item.show {
+    display: block;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

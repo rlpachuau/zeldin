@@ -54,30 +54,33 @@
     </section>
 
     <section id="work" class="slant-down-left work-bg">
-        <h2>SELECTED WORK</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item" data-video-id="1055938592" onclick="openVideo(this)">
-                <img src="img/work/portfolio_1.jpg" alt="Work">
-                <div class="item-overlay"><i class="fas fa-play"></i><span>PLAY VIDEO</span></div>
-            </div>
-            <div class="portfolio-item" data-image-src="img/work/portfolio_4.jpg" onclick="openImage(this)">
-                <img src="img/work/portfolio_4.jpg" alt="Asset">
-                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
-            </div>
-            <div class="portfolio-item" data-image-src="img/work/portfolio_5.jpg" onclick="openImage(this)">
-                <img src="img/work/portfolio_5.jpg" alt="Asset">
-                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
-            </div>
-            <div class="portfolio-item" data-image-src="img/work/portfolio_6.jpg" onclick="openImage(this)">
-                <img src="img/work/portfolio_6.jpg" alt="Asset">
-                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
-            </div>
-            <div class="portfolio-item" data-image-src="img/work/portfolio_7.jpg" onclick="openImage(this)">
-                <img src="img/work/portfolio_7.jpg" alt="Asset">
-                <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
-            </div>
+    <h2>SELECTED WORK</h2>
+
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterSelection('all')">ALL</button>
+        <button class="filter-btn" onclick="filterSelection('games')">GAMES</button>
+        <button class="filter-btn" onclick="filterSelection('film')">FILM/TV</button>
+        <button class="filter-btn" onclick="filterSelection('ads')">ADVERTISING</button>
+    </div>
+
+    <div class="portfolio-grid">
+        <div class="portfolio-item games" data-category="games" data-video-id="1055938592" onclick="openVideo(this)">
+            <img src="img/work/portfolio_1.jpg" alt="Game Cinematic">
+            <div class="item-overlay"><i class="fas fa-play"></i><span>PLAY VIDEO</span></div>
         </div>
-    </section>
+
+        <div class="portfolio-item film" data-category="film" data-image-src="img/work/portfolio_4.jpg" onclick="openImage(this)">
+            <img src="img/work/portfolio_4.jpg" alt="Film Asset">
+            <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+        </div>
+
+        <div class="portfolio-item ads" data-category="ads" data-image-src="img/work/portfolio_5.jpg" onclick="openImage(this)">
+            <img src="img/work/portfolio_5.jpg" alt="Commercial Asset">
+            <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+        </div>
+        
+        </div>
+</section>
 
     <section id="pipeline" class="slant-up-right">
         <h2>TECHNICAL PIPELINE</h2>

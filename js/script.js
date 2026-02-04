@@ -45,3 +45,33 @@ function copyEmail() {
     navigator.clipboard.writeText('info@zeldinstudio.com');
     alert('Email Copied!');
 }
+
+function filterSelection(category) {
+    const items = document.querySelectorAll('.portfolio-item');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Update active button state
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === category.toLowerCase() || 
+           (category === 'all' && btn.innerText === 'ALL')) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Filter items
+    items.forEach(item => {
+        if (category === 'all') {
+            item.classList.remove('hide');
+            item.classList.add('show');
+        } else {
+            if (item.getAttribute('data-category') === category) {
+                item.classList.remove('hide');
+                item.classList.add('show');
+            } else {
+                item.classList.add('hide');
+                item.classList.remove('show');
+            }
+        }
+    });
+}
