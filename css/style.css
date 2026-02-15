@@ -43,7 +43,7 @@ nav a:hover { color: var(--accent); }
 .hero p { font-family: 'Teko'; font-size: 36px; }
 
 /* ABOUT */
-.about-content { max-width: 800px; margin: 0 auto; text-align: center; padding: 0 5%; }
+.about-content { max-width: 1000px; margin: 0 auto; text-align: center; padding: 0 5%; }
 #about h2 { font-family: 'Teko'; font-size: 55px; color: var(--accent); }
 #about p { font-size: 18px; line-height: 1.8; color: #bbb; margin-top: 25px; }
 
@@ -58,7 +58,7 @@ nav a:hover { color: var(--accent); }
 
 /* PIPELINE */
 #pipeline h2 { font-family: 'Teko'; font-size: 55px; color: var(--accent); text-align:center; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 60px auto 0; padding: 0 5%; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1500px; margin: 60px auto 0; padding: 0 5%; }
 .service-card { padding: 40px; background: rgba(255,255,255,0.03); border-bottom: 3px solid var(--accent); transition: 0.3s; text-align: left; }
 .service-card h3 { font-family: 'Teko', sans-serif; font-size: 30px; color: var(--accent); }
 
@@ -69,7 +69,7 @@ nav a:hover { color: var(--accent); }
     background-attachment: fixed; background-position: center; background-size: cover; padding: 150px 5%;
 }
 #capabilities h2 { font-family: 'Teko'; font-size: 55px; color: var(--accent); text-align:center; }
-.cap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 50px auto; }
+.cap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1400px; margin: 50px auto; }
 .cap-card { background: rgba(22, 22, 22, 0.9); padding: 30px; border-left: 4px solid var(--accent); backdrop-filter: blur(5px); }
 .cap-card p { font-size:14px; color:#ccc; }
 
