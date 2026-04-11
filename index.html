@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,14 +96,84 @@ We specialize in premium CGI, real-time production, and cinematic direction to c
         </div>
 </section>
 
-    <section id="pipeline" class="slant-up-right">
-        <h2>OUR CINEMATIC PRODUCTION WORKFLOW</h2>
-        <div class="services-grid">
-            <div class="service-card"><h3>01. PRE-PRODUCTION & PLANNING</h3><p>Shot planning, visual breakdown, technical planning, and production setup to ensure efficient execution, quality control and smooth pipeline flow.</p></div>
-            <div class="service-card"><h3>02. CGI, LOOKDEV & ANIMATION</h3><p>High-end digital characters, environments, lighting, simulations and animation crafted for cinematic storytelling and premium visual impact.</p></div>
-            <div class="service-card"><h3>03. CINEMATIC PRODUCTION & DELIVERY</h3><p>Real-time and offline pipelines for films, commercials, brand visuals and game cinematics — optimized for performance, quality and fast turnaround.</p></div>
+<section id="pipeline" class="pipeline-cinematic">
+    <div class="parallax-bg"></div>
+    <div class="pipeline-overlay"></div>
+    
+    <div class="pipeline-container">
+        <h2 class="pipeline-title">OUR CINEMATIC PIPELINE</h2>
+        
+        <div class="pipeline-wrapper" id="pipelineScroll">
+            
+            <div class="pipeline-step">
+                <div class="step-visual portrait">
+                    <img src="img/pipeline/step1.jpg" alt="Idea & Story">
+                    <div class="wireframe-overlay"></div>
+                    <div class="step-details">
+                        <span class="step-number">01</span>
+                        <h3>IDEA & STORY</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pipeline-step">
+                <div class="step-visual portrait">
+                    <img src="img/pipeline/step2.jpg" alt="Previs">
+                    <div class="wireframe-overlay"></div>
+                    <div class="step-details">
+                        <span class="step-number">02</span>
+                        <h3>PREVIS & BLOCKING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pipeline-step">
+                <div class="step-visual portrait">
+                    <img src="img/pipeline/step3.jpg" alt="3D Assets">
+                    <div class="wireframe-overlay"></div>
+                    <div class="step-details">
+                        <span class="step-number">03</span>
+                        <h3>3D ASSETS & FX</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pipeline-step">
+                <div class="step-visual portrait">
+                    <img src="img/pipeline/step4.jpg" alt="Animation">
+                    <div class="wireframe-overlay"></div>
+                    <div class="step-details">
+                        <span class="step-number">04</span>
+                        <h3>CINEMATIC ANIMATION</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pipeline-step">
+                <div class="step-visual portrait">
+                    <img src="img/pipeline/step5.jpg" alt="Unreal Lighting">
+                    <div class="wireframe-overlay"></div>
+                    <div class="step-details">
+                        <span class="step-number">05</span>
+                        <h3>UNREAL ENGINE LIGHTING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pipeline-step">
+                <div class="step-visual portrait">
+                    <img src="img/pipeline/step6.jpg" alt="Final Render">
+                    <div class="wireframe-overlay"></div>
+                    <div class="step-details">
+                        <span class="step-number">06</span>
+                        <h3>FINAL RENDER & DELIVERY</h3>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="capabilities" class="slant-down-left">
         <h2>CAPABILITIES</h2>
@@ -125,13 +196,20 @@ We specialize in premium CGI, real-time production, and cinematic direction to c
             <img src="img/client/logo-6.png" alt="Client Logo">
             <img src="img/client/logo-7.png" alt="Client Logo">
             <img src="img/client/logo-8.png" alt="Client Logo">
+            <img src="img/client/logo-9.png" alt="Client Logo">
+            <img src="img/client/logo-10.png" alt="Client Logo">
+            
         </div>
     </section>
 
     <section id="contact">
         <h2 class="contact-title">START A PROJECT</h2>
         <p class="email-text">INFO@ZELDINSTUDIO.COM</p>
-        <button class="btn" onclick="copyEmail()">Copy Email</button>
+        
+        <div class="contact-action-wrapper">
+            <button class="btn" onclick="copyEmail(this)">Copy Email</button>
+            <span id="copyMessage" class="copy-status">COPIED TO CLIPBOARD</span>
+    </div>
         
         <div class="contact-socials">
             <a href="https://www.instagram.com/zeldin_studio/" target="_blank"><i class="fab fa-instagram"></i></a>
