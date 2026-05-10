@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Zeldin Studio | Cinematic VFX for Film & Games</title>
+    <title>Zeldin Studio | Cinematic VFX & Visualization Studio</title>
     <link rel="icon" type="image/png" href="img/data/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,7 +24,6 @@
                     <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="#work" onclick="toggleMenu()">Work</a></li>
-                    <li><a href="#pipeline" onclick="toggleMenu()">Pipeline</a></li>
                     <li><a href="#capabilities" onclick="toggleMenu()">Capabilities</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -50,9 +49,9 @@
     <section id="about" class="slant-up-right">
         <div class="about-content">
             <h2>BOUTIQUE CINEMATIC PRODUCTION STUDIO</h2>
-            <p><b>Zeldin Studio is a boutique cinematic production and VFX studio specializing in high-impact visual storytelling for film, commercial, music video and game cinematics. </b>
+            <p><p><b>Zeldin Studio is a boutique cinematic production and visualization studio specializing in high-end VFX, real-time production, and immersive visual storytelling for film, commercial, product, and emerging media industries.</b>
 
-We specialize in premium CGI, real-time production, and cinematic direction to craft visually striking brand films, product visuals, trailers, and immersive experiences for global clients.</p>
+                   <p> We craft cinematic experiences, advanced CG visuals, digital worlds, and technical visualization through a combination of storytelling, procedural workflows, and real-time technologies.</p>
         </div>
     </section>
 
@@ -61,138 +60,85 @@ We specialize in premium CGI, real-time production, and cinematic direction to c
 
     <div class="filter-container">
         <button class="filter-btn active" onclick="filterSelection('all')">ALL</button>
-        <button class="filter-btn" onclick="filterSelection('cinematic')">FILM & COMMERCIAL</button>
-        <button class="filter-btn" onclick="filterSelection('environments')">CINEMATICS & TRAILERS</button>
-        <button class="filter-btn" onclick="filterSelection('assets')">REAL-TIME ENVIRONMENTS</button>
-        <button class="filter-btn" onclick="filterSelection('anim')">CHARACTERS & CREATURES</button>
+        <button class="filter-btn" onclick="filterSelection('cinematic')">CINEMATICS & VFX</button>
+        <button class="filter-btn" onclick="filterSelection('assets')">REAL-TIME & VP</button>
+        <button class="filter-btn" onclick="filterSelection('chars')">DIGITAL CHARACTERS</button>
     </div>
 
     <div class="portfolio-grid">
         <div class="portfolio-item games" data-category="cinematic" data-video-id="1055938592" onclick="openVideo(this)">
-            <img src="img/work/portfolio_1.jpg" alt="Game Cinematic">
+            <img src="img/work/portfolio_1.jpg" alt="Commercial Cinematic">
             <div class="item-overlay"><i class="fas fa-play"></i><span>PLAY VIDEO</span></div>
         </div>
 
-        <div class="portfolio-item film" data-category="environments" data-image-src="img/work/portfolio_4.jpg" onclick="openImage(this)">
-            <img src="img/work/portfolio_4.jpg" alt="Film Asset">
+        <div class="portfolio-item film" data-category="assets" data-image-src="img/work/portfolio_4.jpg" onclick="openImage(this)">
+            <img src="img/work/portfolio_4.jpg" alt="Env Asset">
             <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
         </div>
 
         <div class="portfolio-item ads" data-category="assets" data-image-src="img/work/portfolio_5.jpg" onclick="openImage(this)">
-            <img src="img/work/portfolio_5.jpg" alt="Commercial Asset">
+            <img src="img/work/portfolio_5.jpg" alt="Env Asset">
             <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
         </div>
         
-         <div class="portfolio-item ads" data-category="anim" data-image-src="img/work/ch_2.jpg" onclick="openImage(this)">
-            <img src="img/work/ch_2.jpg" alt="Commercial Asset">
+         <div class="portfolio-item ads" data-category="chars" data-image-src="img/work/ch_2.jpg" onclick="openImage(this)">
+            <img src="img/work/ch_2.jpg" alt="Character Asset">
             <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
         </div>
         
-         <div class="portfolio-item ads" data-category="anim" data-image-src="img/work/ch_1.jpg" onclick="openImage(this)">
-            <img src="img/work/ch_1.jpg" alt="Commercial Asset">
+         <div class="portfolio-item ads" data-category="chars" data-image-src="img/work/ch_1.jpg" onclick="openImage(this)">
+            <img src="img/work/ch_1.jpg" alt="Character Asset">
             <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
         </div>
 
-        <div class="portfolio-item ads" data-category="anim" data-image-src="img/work/ch_3.jpg" onclick="openImage(this)">
-            <img src="img/work/ch_3.jpg" alt="Commercial Asset">
+        <div class="portfolio-item ads" data-category="chars" data-image-src="img/work/ch_3.jpg" onclick="openImage(this)">
+            <img src="img/work/ch_3.jpg" alt="Character Asset">
             <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
         </div>
 
-        <div class="portfolio-item ads" data-category="anim" data-image-src="img/work/ch_4.jpg" onclick="openImage(this)">
-            <img src="img/work/ch_4.jpg" alt="Commercial Asset">
+        <div class="portfolio-item ads" data-category="chars" data-image-src="img/work/ch_4.jpg" onclick="openImage(this)">
+            <img src="img/work/ch_4.jpg" alt="Character Asset">
+            <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+        </div>
+
+        <div class="portfolio-item ads" data-category="chars" data-image-src="img/work/ch_5.jpg" onclick="openImage(this)">
+            <img src="img/work/ch_5.jpg" alt="Character Asset">
+            <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
+        </div>
+
+        <div class="portfolio-item ads" data-category="chars" data-image-src="img/work/ch_6.jpg" onclick="openImage(this)">
+            <img src="img/work/ch_6.jpg" alt="Character Asset">
             <div class="item-overlay"><i class="fas fa-search-plus"></i><span>VIEW IMAGE</span></div>
         </div>
 
         </div>
-</section>
-
-<section id="pipeline" class="pipeline-cinematic">
-    <div class="parallax-bg"></div>
-    <div class="pipeline-overlay"></div>
-    
-    <div class="pipeline-container">
-        <h2 class="pipeline-title">OUR CINEMATIC PIPELINE</h2>
-        
-        <div class="pipeline-wrapper" id="pipelineScroll">
-            
-            <div class="pipeline-step">
-                <div class="step-visual portrait">
-                    <img src="img/pipeline/step1.jpg" alt="Idea & Story">
-                    <div class="wireframe-overlay"></div>
-                    <div class="step-details">
-                        <span class="step-number">01</span>
-                        <h3>IDEA & STORY</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pipeline-step">
-                <div class="step-visual portrait">
-                    <img src="img/pipeline/step2.jpg" alt="Previs">
-                    <div class="wireframe-overlay"></div>
-                    <div class="step-details">
-                        <span class="step-number">02</span>
-                        <h3>PREVIS & BLOCKING</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pipeline-step">
-                <div class="step-visual portrait">
-                    <img src="img/pipeline/step3.jpg" alt="3D Assets">
-                    <div class="wireframe-overlay"></div>
-                    <div class="step-details">
-                        <span class="step-number">03</span>
-                        <h3>3D ASSETS & FX</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pipeline-step">
-                <div class="step-visual portrait">
-                    <img src="img/pipeline/step4.jpg" alt="Animation">
-                    <div class="wireframe-overlay"></div>
-                    <div class="step-details">
-                        <span class="step-number">04</span>
-                        <h3>CINEMATIC ANIMATION</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pipeline-step">
-                <div class="step-visual portrait">
-                    <img src="img/pipeline/step5.jpg" alt="Unreal Lighting">
-                    <div class="wireframe-overlay"></div>
-                    <div class="step-details">
-                        <span class="step-number">05</span>
-                        <h3>UNREAL ENGINE LIGHTING</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pipeline-step">
-                <div class="step-visual portrait">
-                    <img src="img/pipeline/step6.jpg" alt="Final Render">
-                    <div class="wireframe-overlay"></div>
-                    <div class="step-details">
-                        <span class="step-number">06</span>
-                        <h3>FINAL RENDER & DELIVERY</h3>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
 </section>
 
     <section id="capabilities" class="slant-down-left">
         <h2>CAPABILITIES</h2>
         <div class="cap-grid">
-            <div class="cap-card"><h4>GAME CINEMATIC DESIGN</h4><p>High-impact cinematic direction for game trailers, teasers, and in-engine storytelling combining emotional pacing, composition and gameplay-driven narrative.</p></div>
-            <div class="cap-card"><h4>REAL-TIME VISUAL WORLD BUILDING</h4><p>Cinematic real-time environments, lighting, and atmosphere crafted in Unreal Engine for immersive worlds and next-gen presentation.</p></div>
-            <div class="cap-card"><h4>DIGITAL CHARACTERS & CREATURES</h4><p>Production-grade characters and creatures designed for cinematic animation, real-time pipelines and stylized or realistic game universes.</p></div>
-            <div class="cap-card"><h4>CINEMATIC ANIMATION & FX</h4><p>High-end animation and procedural FX focused on realism, weight, timing and visual storytelling impact.</p></div>
+            
+        <div class="cap-card">
+                <h4>CINEMATIC FILM & VFX</h4>
+                <p>High-impact cinematic storytelling, visual effects, and CG integration for films, commercials, trailers, and branded content focused on realism and emotional impact.</p>
+            </div>
+            
+            <div class="cap-card">
+                <h4>REAL-TIME & VIRTUAL PRODUCTION</h4>
+                <p>Advanced real-time environments, virtual production workflows, and Unreal Engine pipelines for immersive cinematic experiences and next-generation visual storytelling.</p>
+            </div>
+
+            <div class="cap-card">
+                <h4>DIGITAL CHARACTERS & CREATURES</h4>
+                <p>Production-grade digital humans, characters, and creatures designed for cinematic animation, real-time workflows, and immersive visual experiences.</p>
+            </div>
+
+            <div class="cap-card">
+                <h4>MOTION DESIGN & VISUALIZATION</h4>
+                <p>Premium motion graphics, product visualization, technical visualization, and procedural animation crafted for commercial, scientific, and emerging media industries.</p>
+            </div>
         </div>
+    </div>
     </section>
 
     <section id="clients">
